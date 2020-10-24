@@ -1,0 +1,270 @@
+
+###############################################################################
+#
+# wszst settings:
+# ---------------
+#
+# This is the settings file for wszst (tool of "Wiimms SZS Tools"). It
+# was created by the EXTRACT command and is needed by the CREATE command
+# to rebuild the original source archive with or without modifications.
+# You can edit it, if you know what you do.
+#
+###############################################################################
+
+# The first part contains some general settings:
+
+# The internal archive format (U8, WU8, BRRES, BREFF or BREFT):
+archive-format = BRRES
+
+# The file format (YAZ0, YAZ1 or BZ for a compressed archive, other ignored):
+file-format = BRRES
+
+# An archive format related version number (-1: unknown or not relevant)
+version = -1
+
+# For U8+WU8 archives: Is there a special '.' base directory:
+have-pt-dir = 0
+
+# The minimum and maximum file data positions:
+min-data-offset = 0x300
+max-data-offset = 0xd27c9ea
+
+# The calculated alignment of all files:
+data-align = 0x2
+
+###############################################################################
+#
+# Some general rules for the next sections:
+#   All pathes are relative to the current base directory (directory that
+#   contains the file wszst-setup.txt). Prefix at least pathes that starts
+#   not with a letter, digit, point, star or underscore with "./".
+#
+#------------------------------------------------------------------------------
+
+[include-pattern]
+
+# All files and directories start with a . are hidden (unix like) and excluded
+# automatically. But filenames in one of the include sections are included
+# independent of this point. Also the include sections takes precedence over
+# the exclude sections.
+
+# This section expects file patterns with wildcards.
+
+#------------------------------------------------------------------------------
+
+[include]
+
+# This second include section accpepts only complete file names and none of
+# characters have any special meaning.
+
+
+#------------------------------------------------------------------------------
+
+[exclude-pattern]
+
+# Files and directories in this section are ignored by the CREATE command.
+# The include sections takes precedence over the exclude sections.
+
+# This section expects file patterns with wildcards.
+# Here we exclude all original, backup and temp files:
+
+*.orig
+*.bak
+*.tmp
+*.temp
+
+# Exclude all PNG files. The intention is to allow the creation of new PNG
+# images and mipmap files without any need to edit this setup file. All
+# extracted PNG files are automatically listed in the [exclude] section.
+# So the exclusion of all PNG is not really needed, but may help. The second
+# (disabled) line is an alternative to exclude all mipmap PNG files.
+
+*.png
+# *.mm#.png
+
+#------------------------------------------------------------------------------
+
+[exclude]
+
+# Files and directories in this section are ignored by the CREATE command.
+# This second exclude section accepts only complete file names and none of
+# characters have any special meaning.
+
+./.string-pool.bin
+./.string-pool.txt
+./3DModels(NW4R)/course.d
+./3DModels(NW4R)/course.txt
+./AnmTexPat(NW4R)/course.d
+./AnmTexPat(NW4R)/course.txt
+./AnmTexSrt(NW4R)/course.d
+./AnmTexSrt(NW4R)/course2.d
+./Textures(NW4R)/Sand_070717b.d
+./Textures(NW4R)/bc_kankyaku_mip.d
+./Textures(NW4R)/bc_spot1.d
+./Textures(NW4R)/beginner_course_kage_04.d
+./Textures(NW4R)/drm_env04.d
+./Textures(NW4R)/drm_env13.d
+./Textures(NW4R)/ef_arrowBumpS.d
+./Textures(NW4R)/ef_arrowGradS.d
+./Textures(NW4R)/ef_rainbowRed2.d
+./Textures(NW4R)/enkei_yama.d
+./Textures(NW4R)/hana.d
+./Textures(NW4R)/lc_EleArrowALL.d
+./Textures(NW4R)/lc_ami.d
+./Textures(NW4R)/lc_block_wall_mip.d
+./Textures(NW4R)/lc_comp1a_070709_128x256a.d
+./Textures(NW4R)/lc_kakyutest.1.d
+./Textures(NW4R)/lc_kakyutest.2.d
+./Textures(NW4R)/lc_kakyutest.3.d
+./Textures(NW4R)/lc_kakyutest.d
+./Textures(NW4R)/lc_kinoko_mip.d
+./Textures(NW4R)/lc_kusa_kanban_mip.d
+./Textures(NW4R)/lc_lake.d
+./Textures(NW4R)/lc_popAll_128x1024_mip.d
+./Textures(NW4R)/lc_tatemonoall_071123mip_a.d
+./Textures(NW4R)/luigi_capall_070607a.d
+./Textures(NW4R)/mainROAD_all_mip.d
+./Textures(NW4R)/t_kusa_070712c.d
+./Textures(NW4R)/t_tree_otubo.d
+./Textures(NW4R)/t_waki_070712a_mip.d
+./Textures(NW4R)/yama.d
+./wszst-setup.txt
+
+#------------------------------------------------------------------------------
+
+[encode]
+
+# Encode (and overwrite without notice) the listed files before adding them
+# to the new archive. The source is searched under the same filename with the
+# correct source extension added or, if this failed, a replaced extension.
+#   Example: For "message.bmg" search files "message.bmg.txt" or "message.txt"
+# The source file itself is set on the exclude list and will not stored into
+# the new archive.
+#
+# The syntax of this file section is a little bit different as the other file
+# sections. Each line begins with a comma separated list of keywords followed
+# by an equal sign.
+#   Syntax:  COMMA_SEPARATED_FORMAT_LIST = relative_filename
+#   Example: BREFT,IA8,3 = ./files/rk_steam
+# The first keyword is the file format. The following keywords describe sub
+# formats. An additonal integer is a file type specific information:
+#  -> For image files it is the number of images (main image + mipmaps).
+#     A value of 0 means: Use the tools default (see option --n-mipmaps).
+#
+# A file is only encoded if the destination does not exist or if the source
+# is younger than the destination. Encoding can be controlled by options
+# --no-encode, --encode-img and --encode-all (short: --noenc --eimg --eall).
+
+MDL		= ./3DModels(NW4R)/course
+PAT		= ./AnmTexPat(NW4R)/course
+TEX,CMPR,1	= ./Textures(NW4R)/Sand_070717b
+TEX,CMPR,1	= ./Textures(NW4R)/bc_kankyaku_mip
+TEX,IA8,1	= ./Textures(NW4R)/bc_spot1
+TEX,CMPR,1	= ./Textures(NW4R)/beginner_course_kage_04
+TEX,I8,1	= ./Textures(NW4R)/drm_env04
+TEX,I8,1	= ./Textures(NW4R)/drm_env13
+TEX,IA8,1	= ./Textures(NW4R)/ef_arrowBumpS
+TEX,IA8,1	= ./Textures(NW4R)/ef_arrowGradS
+TEX,RGB565,1	= ./Textures(NW4R)/ef_rainbowRed2
+TEX,RGB5A3,1	= ./Textures(NW4R)/enkei_yama
+TEX,CMPR,1	= ./Textures(NW4R)/hana
+TEX,CMPR,1	= ./Textures(NW4R)/lc_EleArrowALL
+TEX,RGB5A3,1	= ./Textures(NW4R)/lc_ami
+TEX,CMPR,1	= ./Textures(NW4R)/lc_block_wall_mip
+TEX,CMPR,1	= ./Textures(NW4R)/lc_comp1a_070709_128x256a
+TEX,CMPR,1	= ./Textures(NW4R)/lc_kakyutest
+TEX,CMPR,1	= ./Textures(NW4R)/lc_kakyutest.1
+TEX,CMPR,1	= ./Textures(NW4R)/lc_kakyutest.2
+TEX,CMPR,1	= ./Textures(NW4R)/lc_kakyutest.3
+TEX,CMPR,1	= ./Textures(NW4R)/lc_kinoko_mip
+TEX,CMPR,1	= ./Textures(NW4R)/lc_kusa_kanban_mip
+TEX,CMPR,1	= ./Textures(NW4R)/lc_lake
+TEX,CMPR,1	= ./Textures(NW4R)/lc_popAll_128x1024_mip
+TEX,CMPR,1	= ./Textures(NW4R)/lc_tatemonoall_071123mip_a
+TEX,CMPR,1	= ./Textures(NW4R)/luigi_capall_070607a
+TEX,CMPR,1	= ./Textures(NW4R)/mainROAD_all_mip
+TEX,CMPR,1	= ./Textures(NW4R)/t_kusa_070712c
+TEX,CMPR,1	= ./Textures(NW4R)/t_tree_otubo
+TEX,CMPR,1	= ./Textures(NW4R)/t_waki_070712a_mip
+TEX,CMPR,1	= ./Textures(NW4R)/yama
+
+#------------------------------------------------------------------------------
+
+[create]
+
+# Create (and overwrite without notice) the listed files before adding them to
+# the new archive. The source directory is searched under the same filename
+# with an appended ".d" or, if this fails, with an extension replaced by ".d".
+# If a source directory does not exist, the job is ignored silently.
+#   Example: For "my.brres" search directories "my.brres.d" or "my.d"
+# The source directory itself is set on the exclude list and will not stored
+# into the new archive. Creating can be controlled by the options:
+#   --no-recurse  : Do not create archives recursively.
+#   --no-encode   : Do not encode files before creating an archive.
+#   --encode-img  : Encode all image files (TEX,TPL,BREFT/sub), overrides --no-encode.
+#   --encode-all  : Encode all files and ignore timestamps.
+#   --pt-dir      : Set `point directory' mode.
+#   --u8          : Create an U8 archive.
+#   --brres       : Create an BRRES archive.
+#   --breff       : Create an BREFF archive.
+#   --breft       : Create an BREFT archive.
+#   --no-compress : Create an uncompressed file (U8 instead of SZS).
+#   ...
+
+
+#------------------------------------------------------------------------------
+
+[order]
+
+# This list contains all extracted files in the order of the original archive.
+# If creating archives (but not U8) this list will be used to sort the found
+# files. For archives witg directory support (all but not PACK) it is very
+# important, that the directories are listed before the files that resides in
+# the directories.
+#
+# The value before the equal sign is the file offset in the original archive
+# and is ignored for sorting.
+
+		= ./3DModels(NW4R)/
+     0x300	= ./3DModels(NW4R)/course
+		= ./Textures(NW4R)/
+   0x6f660	= ./Textures(NW4R)/bc_kankyaku_mip
+   0x736a0	= ./Textures(NW4R)/bc_spot1
+   0x756e0	= ./Textures(NW4R)/beginner_course_kage_04
+   0xf5720	= ./Textures(NW4R)/drm_env04
+   0xf5b60	= ./Textures(NW4R)/drm_env13
+   0xf5fa0	= ./Textures(NW4R)/ef_arrowBumpS
+   0xf6fe0	= ./Textures(NW4R)/ef_arrowGradS
+   0xf7820	= ./Textures(NW4R)/ef_rainbowRed2
+   0xf7a60	= ./Textures(NW4R)/enkei_yama
+  0x107aa0	= ./Textures(NW4R)/hana
+  0x1082e0	= ./Textures(NW4R)/lc_ami
+  0x110320	= ./Textures(NW4R)/lc_block_wall_mip
+  0x120360	= ./Textures(NW4R)/lc_comp1a_070709_128x256a
+  0x1243a0	= ./Textures(NW4R)/lc_EleArrowALL
+  0x12c3e0	= ./Textures(NW4R)/lc_kakyutest.1
+  0x12e420	= ./Textures(NW4R)/lc_kakyutest.2
+  0x130460	= ./Textures(NW4R)/lc_kakyutest.3
+  0x1324a0	= ./Textures(NW4R)/lc_kinoko_mip
+  0x1364e0	= ./Textures(NW4R)/lc_kusa_kanban_mip
+  0x146520	= ./Textures(NW4R)/lc_lake
+  0x146d60	= ./Textures(NW4R)/lc_popAll_128x1024_mip
+  0x156da0	= ./Textures(NW4R)/lc_tatemonoall_071123mip_a
+  0x176de0	= ./Textures(NW4R)/luigi_capall_070607a
+  0x177e20	= ./Textures(NW4R)/mainROAD_all_mip
+  0x187e60	= ./Textures(NW4R)/Sand_070717b
+  0x18fea0	= ./Textures(NW4R)/t_kusa_070712c
+  0x1afee0	= ./Textures(NW4R)/t_tree_otubo
+  0x1cff20	= ./Textures(NW4R)/t_waki_070712a_mip
+  0x1d7f60	= ./Textures(NW4R)/yama
+  0x1d8fa0	= ./Textures(NW4R)/lc_kakyutest
+  0x1dafe0	= ./Textures(NW4R)/C:UsersRyan
+		= ./AnmTexPat(NW4R)/
+  0x1fe200	= ./AnmTexPat(NW4R)/course
+		= ./AnmTexSrt(NW4R)/
+  0x1fe2b0	= ./AnmTexSrt(NW4R)/course
+  0x1fe394	= ./AnmTexSrt(NW4R)/course2
+ 0xd27c9ea	= ./.string-pool.bin
+
+#------------------------------------------------------------------------------
+
