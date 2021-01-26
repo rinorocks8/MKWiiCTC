@@ -1,0 +1,34 @@
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\MKWiiCTC2.exe.config
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\MKWiiCTC2.exe
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\MKWiiCTC2.pdb
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.MKWiiCTC2.resources
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Properties.Resources.resources
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Setting.resources
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.GenerateResource.cache
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.CoreCompileInputs.cache
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.exe
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.pdb
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.CopyComplete
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\DotNetZip.xml
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.Fody.CopyLocal.cache
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csprojAssemblyReference.cache
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Import.resources
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Rename.resources
+C:\Users\Ryan Circelli\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Imgs.resources
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.exe
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.pdb
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\MKWiiCTC2.exe.config
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\MKWiiCTC2.exe
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\MKWiiCTC2.pdb
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\bin\Debug\DotNetZip.xml
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csprojAssemblyReference.cache
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Imgs.resources
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Import.resources
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.MKWiiCTC2.resources
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Properties.Resources.resources
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Rename.resources
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.Setting.resources
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.GenerateResource.cache
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.CoreCompileInputs.cache
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.Fody.CopyLocal.cache
+C:\Users\ryanr\source\repos\MKWiiCTC2\MKWiiCTC2\obj\Debug\MKWiiCTC2.csproj.CopyComplete

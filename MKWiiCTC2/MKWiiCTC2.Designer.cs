@@ -100,11 +100,12 @@ namespace MKWiiCTC2
             this.groupBox2.Controls.Add(this.button19);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(346, 47);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.groupBox2.Location = new System.Drawing.Point(692, 96);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(10, 6, 6, 6);
             this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox2, 8);
-            this.groupBox2.Size = new System.Drawing.Size(325, 138);
+            this.groupBox2.Size = new System.Drawing.Size(650, 284);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "KCL";
@@ -119,13 +120,14 @@ namespace MKWiiCTC2
             this.tableLayoutPanel4.Controls.Add(this.button10, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.button7, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 30);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.Padding = new System.Windows.Forms.Padding(8, 0, 8, 8);
+            this.tableLayoutPanel4.Padding = new System.Windows.Forms.Padding(16, 0, 16, 16);
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(319, 119);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(638, 248);
             this.tableLayoutPanel4.TabIndex = 15;
             // 
             // button6
@@ -136,10 +138,10 @@ namespace MKWiiCTC2
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(11, 5);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.button6.Location = new System.Drawing.Point(22, 10);
+            this.button6.Margin = new System.Windows.Forms.Padding(6, 10, 6, 10);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(297, 45);
+            this.button6.Size = new System.Drawing.Size(594, 96);
             this.button6.TabIndex = 0;
             this.button6.Text = "Update Flag File from OBJ";
             this.button6.UseVisualStyleBackColor = false;
@@ -152,10 +154,10 @@ namespace MKWiiCTC2
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(11, 60);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button10.Location = new System.Drawing.Point(22, 126);
+            this.button10.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(143, 46);
+            this.button10.Size = new System.Drawing.Size(287, 96);
             this.button10.TabIndex = 0;
             this.button10.Text = "Open Flag File";
             this.button10.UseVisualStyleBackColor = false;
@@ -168,10 +170,10 @@ namespace MKWiiCTC2
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(164, 60);
-            this.button7.Margin = new System.Windows.Forms.Padding(5, 5, 3, 5);
+            this.button7.Location = new System.Drawing.Point(329, 126);
+            this.button7.Margin = new System.Windows.Forms.Padding(10, 10, 6, 10);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(144, 46);
+            this.button7.Size = new System.Drawing.Size(287, 96);
             this.button7.TabIndex = 1;
             this.button7.Text = "Update KCL File";
             this.button7.UseVisualStyleBackColor = false;
@@ -186,9 +188,10 @@ namespace MKWiiCTC2
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.Color.Black;
-            this.button19.Location = new System.Drawing.Point(31, 0);
+            this.button19.Location = new System.Drawing.Point(62, 0);
+            this.button19.Margin = new System.Windows.Forms.Padding(6);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(13, 13);
+            this.button19.Size = new System.Drawing.Size(26, 26);
             this.button19.TabIndex = 14;
             this.toolTip2.SetToolTip(this.button19, "How to create a KCL");
             this.button19.UseVisualStyleBackColor = false;
@@ -201,11 +204,12 @@ namespace MKWiiCTC2
             this.groupBox3.Controls.Add(this.button21);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(11, 353);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
+            this.groupBox3.Location = new System.Drawing.Point(22, 725);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(6, 6, 10, 6);
             this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox3, 7);
-            this.groupBox3.Size = new System.Drawing.Size(325, 133);
+            this.groupBox3.Size = new System.Drawing.Size(650, 247);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "KMP and Minimap";
@@ -221,9 +225,10 @@ namespace MKWiiCTC2
             this.tableLayoutPanel6.Controls.Add(this.comboBox2, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.button15, 1, 3);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 30);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.Padding = new System.Windows.Forms.Padding(8, 0, 8, 8);
+            this.tableLayoutPanel6.Padding = new System.Windows.Forms.Padding(16, 0, 16, 16);
             this.tableLayoutPanel6.RowCount = 6;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -231,7 +236,7 @@ namespace MKWiiCTC2
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(319, 114);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(638, 211);
             this.tableLayoutPanel6.TabIndex = 16;
             // 
             // button9
@@ -241,11 +246,11 @@ namespace MKWiiCTC2
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(11, 5);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button9.Location = new System.Drawing.Point(22, 10);
+            this.button9.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button9.Name = "button9";
             this.tableLayoutPanel6.SetRowSpan(this.button9, 3);
-            this.button9.Size = new System.Drawing.Size(143, 41);
+            this.button9.Size = new System.Drawing.Size(287, 76);
             this.button9.TabIndex = 0;
             this.button9.Text = "Open KMP";
             this.button9.UseVisualStyleBackColor = false;
@@ -258,11 +263,11 @@ namespace MKWiiCTC2
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.ForeColor = System.Drawing.Color.Black;
-            this.button16.Location = new System.Drawing.Point(11, 56);
-            this.button16.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button16.Location = new System.Drawing.Point(22, 106);
+            this.button16.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button16.Name = "button16";
             this.tableLayoutPanel6.SetRowSpan(this.button16, 3);
-            this.button16.Size = new System.Drawing.Size(143, 45);
+            this.button16.Size = new System.Drawing.Size(287, 79);
             this.button16.TabIndex = 0;
             this.button16.Text = "Create Minimap";
             this.button16.UseVisualStyleBackColor = false;
@@ -279,10 +284,10 @@ namespace MKWiiCTC2
             "KMP Cloud",
             "KMP Modifier",
             "Lorenzi\'s KMP Editor"});
-            this.comboBox2.Location = new System.Drawing.Point(164, 17);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(5, 0, 3, 0);
+            this.comboBox2.Location = new System.Drawing.Point(329, 32);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(10, 0, 6, 0);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(144, 21);
+            this.comboBox2.Size = new System.Drawing.Size(287, 33);
             this.comboBox2.TabIndex = 9;
             this.comboBox2.Text = "KMP Cloud";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
@@ -294,11 +299,11 @@ namespace MKWiiCTC2
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.ForeColor = System.Drawing.Color.Black;
-            this.button15.Location = new System.Drawing.Point(164, 56);
-            this.button15.Margin = new System.Windows.Forms.Padding(5, 5, 3, 5);
+            this.button15.Location = new System.Drawing.Point(329, 106);
+            this.button15.Margin = new System.Windows.Forms.Padding(10, 10, 6, 10);
             this.button15.Name = "button15";
             this.tableLayoutPanel6.SetRowSpan(this.button15, 3);
-            this.button15.Size = new System.Drawing.Size(144, 45);
+            this.button15.Size = new System.Drawing.Size(287, 79);
             this.button15.TabIndex = 1;
             this.button15.Text = "Auto Patch Minimap";
             this.button15.UseVisualStyleBackColor = false;
@@ -313,9 +318,10 @@ namespace MKWiiCTC2
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.Color.Black;
-            this.button21.Location = new System.Drawing.Point(97, 0);
+            this.button21.Location = new System.Drawing.Point(194, 0);
+            this.button21.Margin = new System.Windows.Forms.Padding(6);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(13, 13);
+            this.button21.Size = new System.Drawing.Size(26, 26);
             this.button21.TabIndex = 15;
             this.toolTip2.SetToolTip(this.button21, "KMP Editing and How to create a Minimap");
             this.button21.UseVisualStyleBackColor = false;
@@ -328,11 +334,12 @@ namespace MKWiiCTC2
             this.groupBox4.Controls.Add(this.button22);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(346, 281);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.groupBox4.Location = new System.Drawing.Point(692, 577);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(10, 6, 6, 6);
             this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox4, 11);
-            this.groupBox4.Size = new System.Drawing.Size(325, 205);
+            this.groupBox4.Size = new System.Drawing.Size(650, 395);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Creation";
@@ -349,15 +356,16 @@ namespace MKWiiCTC2
             this.tableLayoutPanel2.Controls.Add(this.button8, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.button12, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 30);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(8, 0, 8, 8);
+            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(16, 0, 16, 16);
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(319, 186);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(638, 359);
             this.tableLayoutPanel2.TabIndex = 17;
             // 
             // button17
@@ -368,10 +376,10 @@ namespace MKWiiCTC2
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.ForeColor = System.Drawing.Color.Black;
-            this.button17.Location = new System.Drawing.Point(11, 123);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.button17.Location = new System.Drawing.Point(22, 238);
+            this.button17.Margin = new System.Windows.Forms.Padding(6, 10, 6, 10);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(297, 50);
+            this.button17.Size = new System.Drawing.Size(594, 95);
             this.button17.TabIndex = 4;
             this.button17.Text = "Create SZS and Test";
             this.button17.UseVisualStyleBackColor = false;
@@ -384,10 +392,10 @@ namespace MKWiiCTC2
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(11, 5);
-            this.button11.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button11.Location = new System.Drawing.Point(22, 10);
+            this.button11.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(143, 49);
+            this.button11.Size = new System.Drawing.Size(287, 94);
             this.button11.TabIndex = 1;
             this.button11.Text = "Create SZS";
             this.button11.UseVisualStyleBackColor = false;
@@ -400,10 +408,10 @@ namespace MKWiiCTC2
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(164, 64);
-            this.button13.Margin = new System.Windows.Forms.Padding(5, 5, 3, 5);
+            this.button13.Location = new System.Drawing.Point(329, 124);
+            this.button13.Margin = new System.Windows.Forms.Padding(10, 10, 6, 10);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(144, 49);
+            this.button13.Size = new System.Drawing.Size(287, 94);
             this.button13.TabIndex = 3;
             this.button13.Text = "Open Dolphin";
             this.button13.UseVisualStyleBackColor = false;
@@ -416,10 +424,10 @@ namespace MKWiiCTC2
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(164, 5);
-            this.button8.Margin = new System.Windows.Forms.Padding(5, 5, 3, 5);
+            this.button8.Location = new System.Drawing.Point(329, 10);
+            this.button8.Margin = new System.Windows.Forms.Padding(10, 10, 6, 10);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 49);
+            this.button8.Size = new System.Drawing.Size(287, 94);
             this.button8.TabIndex = 2;
             this.button8.Text = "SZS Check";
             this.button8.UseVisualStyleBackColor = false;
@@ -432,10 +440,10 @@ namespace MKWiiCTC2
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(11, 64);
-            this.button12.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button12.Location = new System.Drawing.Point(22, 124);
+            this.button12.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(143, 49);
+            this.button12.Size = new System.Drawing.Size(287, 94);
             this.button12.TabIndex = 2;
             this.button12.Text = "Update Game File";
             this.button12.UseVisualStyleBackColor = false;
@@ -450,9 +458,10 @@ namespace MKWiiCTC2
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.Black;
-            this.button22.Location = new System.Drawing.Point(50, 0);
+            this.button22.Location = new System.Drawing.Point(100, 0);
+            this.button22.Margin = new System.Windows.Forms.Padding(6);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(13, 13);
+            this.button22.Size = new System.Drawing.Size(26, 26);
             this.button22.TabIndex = 16;
             this.toolTip2.SetToolTip(this.button22, "Testing a Track");
             this.button22.UseVisualStyleBackColor = false;
@@ -466,10 +475,11 @@ namespace MKWiiCTC2
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 8);
+            this.label1.Location = new System.Drawing.Point(22, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.tableLayoutPanel1.SetRowSpan(this.label1, 2);
-            this.label1.Size = new System.Drawing.Size(660, 36);
+            this.label1.Size = new System.Drawing.Size(1320, 74);
             this.label1.TabIndex = 9;
             this.label1.Text = "Mario Kart Wii Custom Track Creator - By Rinorocks8";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -482,11 +492,12 @@ namespace MKWiiCTC2
             this.groupBox6.Controls.Add(this.button20);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(346, 191);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.groupBox6.Location = new System.Drawing.Point(692, 392);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(10, 6, 6, 6);
             this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox6, 5);
-            this.groupBox6.Size = new System.Drawing.Size(325, 84);
+            this.groupBox6.Size = new System.Drawing.Size(650, 173);
             this.groupBox6.TabIndex = 10;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Mipmaps";
@@ -503,13 +514,14 @@ namespace MKWiiCTC2
             this.tableLayoutPanel3.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.checkBox1, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 30);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(8, 0, 8, 8);
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(16, 0, 16, 16);
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(319, 65);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(638, 137);
             this.tableLayoutPanel3.TabIndex = 14;
             // 
             // button14
@@ -519,11 +531,11 @@ namespace MKWiiCTC2
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.ForeColor = System.Drawing.Color.Black;
-            this.button14.Location = new System.Drawing.Point(11, 5);
-            this.button14.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button14.Location = new System.Drawing.Point(22, 10);
+            this.button14.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button14.Name = "button14";
             this.tableLayoutPanel3.SetRowSpan(this.button14, 2);
-            this.button14.Size = new System.Drawing.Size(143, 47);
+            this.button14.Size = new System.Drawing.Size(286, 101);
             this.button14.TabIndex = 2;
             this.button14.Text = "Add Mipmap";
             this.button14.UseVisualStyleBackColor = false;
@@ -533,7 +545,8 @@ namespace MKWiiCTC2
             // 
             this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(255, 3);
+            this.numericUpDown1.Location = new System.Drawing.Point(511, 6);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(6);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             16,
             0,
@@ -545,7 +558,7 @@ namespace MKWiiCTC2
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(53, 21);
+            this.numericUpDown1.Size = new System.Drawing.Size(105, 35);
             this.numericUpDown1.TabIndex = 3;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -559,10 +572,10 @@ namespace MKWiiCTC2
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(162, 3);
-            this.label4.Margin = new System.Windows.Forms.Padding(3);
+            this.label4.Location = new System.Drawing.Point(324, 6);
+            this.label4.Margin = new System.Windows.Forms.Padding(6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 22);
+            this.label4.Size = new System.Drawing.Size(175, 48);
             this.label4.TabIndex = 15;
             this.label4.Text = "Mipmap Level";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -575,11 +588,11 @@ namespace MKWiiCTC2
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(159, 31);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.checkBox1.Location = new System.Drawing.Point(318, 66);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(0, 6, 6, 6);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox1.Size = new System.Drawing.Size(149, 23);
+            this.checkBox1.Size = new System.Drawing.Size(298, 49);
             this.checkBox1.TabIndex = 16;
             this.checkBox1.Text = "Confirm Mipmap Level";
             this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -595,9 +608,10 @@ namespace MKWiiCTC2
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.Black;
-            this.button20.Location = new System.Drawing.Point(53, 0);
+            this.button20.Location = new System.Drawing.Point(106, 0);
+            this.button20.Margin = new System.Windows.Forms.Padding(6);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(13, 13);
+            this.button20.Size = new System.Drawing.Size(26, 26);
             this.button20.TabIndex = 13;
             this.toolTip2.SetToolTip(this.button20, "Remeber to enable mipmaps");
             this.button20.UseVisualStyleBackColor = false;
@@ -609,11 +623,12 @@ namespace MKWiiCTC2
             this.groupBox5.Controls.Add(this.tableLayoutPanel7);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(11, 47);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
+            this.groupBox5.Location = new System.Drawing.Point(22, 96);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(6, 6, 10, 6);
             this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox5, 5);
-            this.groupBox5.Size = new System.Drawing.Size(325, 84);
+            this.groupBox5.Size = new System.Drawing.Size(650, 173);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Currently Selected";
@@ -628,10 +643,10 @@ namespace MKWiiCTC2
             this.tableLayoutPanel7.Controls.Add(this.label3, 0, 5);
             this.tableLayoutPanel7.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(8);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 30);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(16);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.Padding = new System.Windows.Forms.Padding(8, 0, 8, 8);
+            this.tableLayoutPanel7.Padding = new System.Windows.Forms.Padding(16, 0, 16, 16);
             this.tableLayoutPanel7.RowCount = 7;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
@@ -640,11 +655,11 @@ namespace MKWiiCTC2
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(319, 65);
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(638, 137);
             this.tableLayoutPanel7.TabIndex = 13;
             // 
             // button18
@@ -654,11 +669,11 @@ namespace MKWiiCTC2
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.ForeColor = System.Drawing.Color.Black;
-            this.button18.Location = new System.Drawing.Point(213, 11);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
+            this.button18.Location = new System.Drawing.Point(427, 23);
+            this.button18.Margin = new System.Windows.Forms.Padding(6, 6, 10, 6);
             this.button18.Name = "button18";
             this.tableLayoutPanel7.SetRowSpan(this.button18, 6);
-            this.button18.Size = new System.Drawing.Size(93, 43);
+            this.button18.Size = new System.Drawing.Size(185, 92);
             this.button18.TabIndex = 8;
             this.button18.Text = "Open Folder";
             this.button18.UseVisualStyleBackColor = false;
@@ -670,12 +685,12 @@ namespace MKWiiCTC2
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(8, 40);
+            this.label3.Location = new System.Drawing.Point(16, 85);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.label3.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.tableLayoutPanel7.SetRowSpan(this.label3, 2);
-            this.label3.Size = new System.Drawing.Size(202, 17);
+            this.label3.Size = new System.Drawing.Size(405, 36);
             this.label3.TabIndex = 12;
             this.label3.Text = "None Selected";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -687,11 +702,11 @@ namespace MKWiiCTC2
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 8);
+            this.label2.Location = new System.Drawing.Point(16, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.tableLayoutPanel7.SetRowSpan(this.label2, 4);
-            this.label2.Size = new System.Drawing.Size(202, 32);
+            this.label2.Size = new System.Drawing.Size(405, 68);
             this.label2.TabIndex = 13;
             this.toolTip2.SetToolTip(this.label2, "Right Click to Edit Name");
             this.label2.Click += new System.EventHandler(this.label2_Click_2);
@@ -703,10 +718,10 @@ namespace MKWiiCTC2
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(11, 5);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button2.Location = new System.Drawing.Point(22, 10);
+            this.button2.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 51);
+            this.button2.Size = new System.Drawing.Size(287, 106);
             this.button2.TabIndex = 3;
             this.button2.Text = "Open Blender";
             this.button2.UseVisualStyleBackColor = false;
@@ -719,10 +734,10 @@ namespace MKWiiCTC2
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(11, 66);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 5, 5, 5);
+            this.button3.Location = new System.Drawing.Point(22, 136);
+            this.button3.Margin = new System.Windows.Forms.Padding(6, 10, 10, 10);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(143, 51);
+            this.button3.Size = new System.Drawing.Size(287, 106);
             this.button3.TabIndex = 4;
             this.button3.Text = "FBX to DAE";
             this.button3.UseVisualStyleBackColor = false;
@@ -735,10 +750,10 @@ namespace MKWiiCTC2
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(164, 5);
-            this.button4.Margin = new System.Windows.Forms.Padding(5, 5, 3, 5);
+            this.button4.Location = new System.Drawing.Point(329, 10);
+            this.button4.Margin = new System.Windows.Forms.Padding(10, 10, 6, 10);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 51);
+            this.button4.Size = new System.Drawing.Size(287, 106);
             this.button4.TabIndex = 5;
             this.button4.Text = "Open CMD Prompt";
             this.button4.UseVisualStyleBackColor = false;
@@ -751,10 +766,10 @@ namespace MKWiiCTC2
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(164, 66);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 3, 5);
+            this.button1.Location = new System.Drawing.Point(329, 136);
+            this.button1.Margin = new System.Windows.Forms.Padding(10, 10, 6, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 51);
+            this.button1.Size = new System.Drawing.Size(287, 106);
             this.button1.TabIndex = 7;
             this.button1.Text = "FBX to OBJ";
             this.button1.UseVisualStyleBackColor = false;
@@ -767,11 +782,12 @@ namespace MKWiiCTC2
             this.groupBox1.Controls.Add(this.button23);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(11, 137);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
+            this.groupBox1.Location = new System.Drawing.Point(22, 281);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 10, 6);
             this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox1, 12);
-            this.groupBox1.Size = new System.Drawing.Size(325, 210);
+            this.groupBox1.Size = new System.Drawing.Size(650, 432);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "General";
@@ -788,14 +804,15 @@ namespace MKWiiCTC2
             this.tableLayoutPanel5.Controls.Add(this.button4, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.button3, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 30);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(8, 0, 8, 8);
+            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(16, 0, 16, 16);
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(319, 191);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(638, 396);
             this.tableLayoutPanel5.TabIndex = 18;
             // 
             // button5
@@ -806,10 +823,10 @@ namespace MKWiiCTC2
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(11, 127);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.button5.Location = new System.Drawing.Point(22, 262);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 10, 6, 10);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(297, 51);
+            this.button5.Size = new System.Drawing.Size(594, 108);
             this.button5.TabIndex = 6;
             this.button5.Text = "Open course_model.brres";
             this.button5.UseVisualStyleBackColor = false;
@@ -824,9 +841,10 @@ namespace MKWiiCTC2
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.Color.Black;
-            this.button23.Location = new System.Drawing.Point(48, 0);
+            this.button23.Location = new System.Drawing.Point(96, 0);
+            this.button23.Margin = new System.Windows.Forms.Padding(6);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(13, 13);
+            this.button23.Size = new System.Drawing.Size(26, 26);
             this.button23.TabIndex = 17;
             this.toolTip2.SetToolTip(this.button23, "Modeling");
             this.button23.UseVisualStyleBackColor = false;
@@ -859,7 +877,7 @@ namespace MKWiiCTC2
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(8);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(16);
             this.tableLayoutPanel1.RowCount = 26;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.846153F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.846153F));
@@ -887,22 +905,22 @@ namespace MKWiiCTC2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.846153F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.846153F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.846153F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(682, 497);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1364, 994);
             this.tableLayoutPanel1.TabIndex = 18;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // MKWiiCTC2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(682, 497);
+            this.ClientSize = new System.Drawing.Size(1364, 994);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "MKWiiCTC2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;

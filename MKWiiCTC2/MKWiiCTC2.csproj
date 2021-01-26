@@ -76,7 +76,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BinaryReader.cs" />
+    <Compile Include="RichTextBoxExtensions.cs" />
     <Compile Include="Imgs.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -2578,6 +2578,7 @@ namespace MKWiiCTC2
         private void button14_Click_1(object sender, EventArgs e)
         {
             //Add Mipmaps
+
             if (currentcourse == "None Selected")
             {
                 MessageBox.Show("Select a Course");
@@ -2675,54 +2676,45 @@ wimgt decode * -d" + '\u0022' + "%~dp0/course_model.brres.d/Textures(NW4R)/here"
         private void Linear_Mipmap_Linear()
         {
             EndianBinaryReader fs = new EndianBinaryReader(new FileStream(path + @"CustomTrackFiles\" + currentcourse + @"\course_model.brres", FileMode.Open, FileAccess.ReadWrite));
-
+            
             fs.offset(0x0C);
-            int a = fs.ReadUInt16();
-            fs.offsetloc(a, 0x00);
+            byte[] rootOffset = fs.readBytes(2); //offset to root from start
+            fs.goTo(0x00);
+            fs.offset(rootOffset); //root
             fs.offset(0x04);
-            uint b = fs.ReadUInt32();
-            fs.offsetloc(b, a);
+            byte[] rootLength = fs.readBytes(4); //root length
+            fs.goTo(rootOffset);
+            fs.offset(rootLength);
             fs.seek("MDL0");
-            long h = fs.BaseStream.Position; //mdl0 start
+            byte[] mdl0 = fs.getLoc(); //mdl0 start
 
-            //name check
-            fs.offset(0x48);
-            uint c = fs.ReadUInt32();
-            fs.set(h);
-            fs.offset(c);
-            if (fs.ReadString(Encoding.UTF8, 6) == "course")
+            fs.offset(0x48); //goes to name of subfile
+            byte[] mdl0NameOffset = fs.readBytes(4);
+            fs.goTo(mdl0);
+            fs.offset(mdl0NameOffset);
+            if (fs.readBytesToString(6) == "course")
             {
-                if (fs.ReadUInt32() == 0)
+                fs.offset(6);
+                if (fs.readBytes(4).SequenceEqual(new byte[4]))
                 {
-                    //find start of materials
-                    fs.set(h);
-                    fs.offset(0x30);
-                    uint d = fs.ReadUInt32();
-                    fs.set(h);
-                    fs.offset(d);
-                    fs.offset(0x24);
-                    uint f = fs.ReadUInt32();
-                    fs.set(h);
-                    fs.offset(d);
-                    fs.offset(f);
-
+                   
                     //check mip
-                    fs.set(h);
+                    fs.goTo(mdl0);
                     fs.offset(0x04);
-                    uint aa = fs.ReadUInt32();
-                    fs.set(h);
-                    fs.offset(aa);
-                    while (1==1)
+                    byte[] mdl0Length = fs.readBytes(4);
+                    fs.goTo(mdl0);
+                    fs.offset(mdl0Length);
+                    while (true)
                     {
-                        if (fs.ReadStringNo(Encoding.UTF8, 4) == "SRT0")
+                        if (fs.readBytesToString(4) == "SRT0")
                         {
-                            long ab = fs.BaseStream.Position;
-                            fs.offset(0x04);
-                            uint ac = fs.ReadUInt32();
-                            fs.set(ab);
-                            fs.offset(ac);
+                            byte[] str0 = fs.getLoc();
+                            fs.offset(0x08);
+                            byte[] str0Length = fs.readBytes(4);
+                            fs.goTo(str0);
+                            fs.offset(str0Length);
                         }
-                        else if (fs.ReadStringNo(Encoding.UTF8, 4) == "TEX0")
+                        else if (fs.readBytesToString(4) == "TEX0")
                         {
                             break;
                         }
@@ -2732,108 +2724,121 @@ wimgt decode * -d" + '\u0022' + "%~dp0/course_model.brres.d/Textures(NW4R)/here"
                             break;
                         }
                     }
+
                     //found tex0
-                    while (1 == 1)
+                    while (true)
                     {
-                        if (fs.ReadStringNo(Encoding.UTF8, 4) == "TEX0")
+                        if (fs.readBytesToString(4) == "TEX0")
                         {
-                            long ad = fs.BaseStream.Position;
+                            byte[] tex0 = fs.getLoc();
                             fs.offset(0x24);
-                            uint ae = fs.ReadUInt32();
+                            byte[] tex0Images = fs.readBytes(4);
                             //determines if it has mipmaps
-                            if (ae > 1)
+                            if (BitConverter.ToInt32(tex0Images, 0) > 1)
                             {
                                 //gets name of image
-                                fs.set(ad);
+                                fs.goTo(tex0);
                                 fs.offset(0x10);
                                 fs.offset(0x04);
-                                uint ah = fs.ReadUInt32();
-                                fs.set(ad);
-                                fs.offset(ah);
+                                byte[] tex0NameOffset = fs.readBytes(4);
+                                fs.goTo(tex0);
+                                fs.offset(tex0NameOffset);
                                 imglist.Add(fs.scan());
                             }
-                            fs.set(ad);
+                            fs.goTo(tex0);
                             fs.offset(0x04);
-                            uint af = fs.ReadUInt32();
-                            fs.set(ad);
-                            fs.offset(af);
-
-                        }else{break;}
+                            byte[] tex0Length = fs.readBytes(4);
+                            fs.goTo(tex0);
+                            fs.offset(tex0Length);
+                        }
+                        else { 
+                            break; 
+                        }
                     }
 
+                    //find start of materials
+                    fs.goTo(mdl0);
+                    fs.offset(0x10);
+                    fs.offset(0x20);
+                    byte[] matOffset = fs.readBytes(4);
+                    fs.goTo(mdl0);
+                    fs.offset(matOffset);
+                    fs.offset(0x24);
+                    byte[] firstMatOffset = fs.readBytes(4);
+
                     //materials #
-                    fs.set(h);
-                    fs.offset(d);
-                    fs.offset(f);
+                    fs.goTo(mdl0);
+                    fs.offset(matOffset);
+                    fs.offset(firstMatOffset);
                     for (uint i = 0; i >= 0; i++)
                     {
-                        long g = fs.BaseStream.Position;
+                        byte[] currentMat = fs.getLoc();
                         //check that it is a material
                         fs.offset(0x0C);
-                        uint j = fs.ReadUInt32();
-                        if (j != i)
+                        byte[] matIndex = fs.readBytes(4);
+                        if (BitConverter.ToInt32(matIndex, 0) != i)
                         {
                             break;
                         }
                         //number of images
-                        fs.set(g);
+                        fs.goTo(currentMat);
                         fs.offset(0x2C);
-                        uint k = fs.ReadUInt32();
+                        int numImages = BitConverter.ToInt32(fs.readBytes(4), 0);
 
                         List<int> number = new List<int> { };
 
                         //logs image location in terms of layer
-                        for (int bb = 0; bb < k; bb++)
+                        for (int bb = 0; bb < numImages; bb++)
                         {
-                            fs.set(g);
-                            fs.offset(0x418);
+                            fs.goTo(currentMat);
+                            fs.offset(new byte[] { 0x18, 0x04 });
                             //offsets each layer
                             for (int bc = bb; bc > 0; bc--)
                             {
                                 fs.offset(0x34);
                             }
-                            uint ba = fs.ReadUInt32();
-                            fs.offset(-4);
-                            fs.offset(ba);
+                            byte[] layerNameOffset = fs.readBytes(4);
+                            fs.offset(layerNameOffset);
                             if (imglist.Contains(fs.scan()))
                             {
                                 number.Add(bb);
                             }
                         }
 
-                        for (int loop = 0; loop < k; loop++)
+                        for (int loop = 0; loop < numImages; loop++)
                         {
                             if (number.Contains(loop))
                             {
-                                fs.set(g);
-                                fs.offset(0x438);
+                                fs.goTo(currentMat);
+                                fs.offset(new byte[] { 0x38, 0x04 });
                                 //writing in wrong spot for multiple images
                                 for (int bc = loop; bc > 0; bc--)
                                 {
                                     fs.offset(0x34);
                                 }
-                                fs.Write("00000005");
+                                fs.writeBytes(new byte[] {0x00, 0x00, 0x00, 0x05});
                             }
                             if (number.Contains(loop) == false)
                             {
-                                fs.set(g);
-                                fs.offset(0x438);
+                                fs.goTo(currentMat);
+                                fs.offset(new byte[] { 0x38, 0x04 });
                                 //writing in wrong spot for multiple images
                                 for (int bc = loop; bc > 0; bc--)
                                 {
                                     fs.offset(0x34);
                                 }
-                                fs.Write("00000001");
+                                fs.writeBytes(new byte[] {0x00, 0x00, 0x00, 0x01});
                             }
                         }
                         //reset to next material
-                        fs.set(g);
-                        uint l = fs.ReadUInt32() - 4;
-                        fs.offset(l);
+                        fs.goTo(currentMat);
+                        byte[] currentMatLength = fs.readBytes(4);
+                        fs.offset(currentMatLength);
                     }
                 }
                 else { MessageBox.Show("Error Occured1"); }
-            }else { MessageBox.Show("Error Occured2"); }
+            }
+            else { MessageBox.Show("Error Occured2"); }
             fs.Close();
             //end of liner
         }
